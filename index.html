@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="MVTRIX" />
+    <meta name="generator" content="MVTRIX" />
+    <title>FAN-SHOP</title>
+
+    <link
+      rel="canonical"
+      href="https://v5.getbootstrap.com/docs/5.0/examples/album/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid mx-0 px-0 banner py-0 my-0">
+      <div
+        class="container-fluid banner1 px-0 mx-0 d-flex justify-content-center align-items-center py-0"
+      >
+        <div class="h1 text-light d-flex" style="letter-spacing: 30px">
+          <span style="border-bottom: 1px solid white">FAN</span>
+          SHOP
+        </div>
+      </div>
+    </div>
+    <header style="position: sticky; top: 0; z-index: 2000">
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">FAQ</h4>
+              <p class="text-muted">&copy;Copyright 2024 FAN-SHOP</p>
+            </div>
+            <div
+              class="col-sm-4 offset-md-1 py-4 nav d-flex flex-column justify-content-center"
+            >
+              <h4 class="text-white">Menu</h4>
+              <ul class="list-unstyled">
+                <li class="link">
+                  <a href="#" class="text-white">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="#e8eaed"
+                      >
+                        <path
+                          d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+                        /></svg
+                    ></span>
+                    Accueil</a
+                  >
+                </li>
+                <li>
+                  <a href="#shop" class="text-white"
+                    ><span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="#e8eaed"
+                      >
+                        <path
+                          d="M160-720v-80h640v80H160Zm0 560v-240h-40v-80l40-200h640l40 200v80h-40v240h-80v-240H560v240H160Zm80-80h240v-160H240v160Zm-38-240h556-556Zm0 0h556l-24-120H226l-24 120Z"
+                        /></svg
+                    ></span>
+                    Boutique</a
+                  >
+                </li>
+                <li>
+                  <a href="#location" class="text-white"
+                    ><span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="#e8eaed"
+                      >
+                        <path
+                          d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
+                        /></svg
+                    ></span>
+                    Localisation</a
+                  >
+                </li>
+                <li>
+                  <a href="#contact" class="text-white"
+                    ><span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="#e8eaed"
+                      >
+                        <path
+                          d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+                        /></svg
+                    ></span>
+                    Contacter-nous</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-light header shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <strong
+              ><span
+                id="logo"
+                style="
+                  border-bottom: 1px solid black;
+                  border-top: 1px solid black;
+                "
+                >FAN</span
+              >
+              SHOP</strong
+            >
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="font-weight-light">
+              BIENVENUE CHEZ<br />
+              FAN-SHOP
+            </h1>
+            <p class="lead text-muted">
+              Des packs de tous niveau à vous présenter
+            </p>
+            <p>
+              <a href="#shop" class="btn btn-primary my-2">Voir Les Packs</a>
+              <a href="#contact" class="btn btn-secondary my-2"
+                >Contacte via Gmail</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <div
+        class="alert alert-info alert-dismissible dialog-box py-lg-5"
+        role="alert"
+        id="scrollDialog"
+      >
+        <strong
+          ><span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+          Information !</strong
+        >
+        Nous sommes heureux de vous informer que les packs de fournitures
+        scolaires pour le niveau moyen et secondaire sont désormais disponible
+        chez FAN-SHOP.<br />De plus, des packs pour les séries (L, S, STEG et T)
+        sont également en stock et prêts à être achetés
+      </div>
+      <div
+        class="alert alert-info alert-dismissible dialog-box2 py-lg-5"
+        role="alert"
+        id="scrollDialog2"
+      >
+        <strong
+          ><span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+          Information !</strong
+        >
+        Venez vite découvrir nos packs complets et adaptés à chaque série,
+        exclusivement chez FAN-SHOP. Tout ce dont vous avez besoin pour bien
+        commencer l'année scolaire est réuni dans un seul pack pratique<br /><span
+          class="text-info"
+          >Ne tardez pas , les quantités sont limités !</span
+        >
+      </div>
+      <div class="album py-5 bg-light" id="shop">
+        <div class="container mt-5 text-center">
+          <h1>Boutique</h1>
+          <div class="animated-text" id="text"></div>
+        </div>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  role="img"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Photo de Pack
+                  </text>
+                </svg>
+
+                <div class="card-body">
+                  <h6>Pack collège 3<sup>e</sup> et 4<sup>e</sup></h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      05 cahiers 200pages (Maths, PC, HG, Français et Anglais)
+                    </li>
+                    <li>01 cahier 200pages SVT</li>
+                    <li>01 cahier d'exercices feuilles blanches</li>
+                    <li>03 cahiers 100pages petit format</li>
+                    <li>04 stylos (bleu, rouge, vert et noir)</li>
+                    <li>01 Matériels de géométrie</li>
+                    <li>01 blanco</li>
+                    <li>01 criterium</li>
+                  </ul>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  role="img"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Photo de pack
+                  </text>
+                </svg>
+
+                <div class="card-body">
+                  <h6>Pack collège 6<sup>e</sup> et 5<sup>e</sup></h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      04 cahiers 200pages (Maths, HG, Français et Anglais)
+                    </li>
+                    <li>01 cahier 200pages SVT</li>
+                    <li>03 cahiers 100pages petit format pour exercices</li>
+                    <li>04 stylos (bleu, rouge, vert et noir)</li>
+                    <li>01 Matériels de géométrie</li>
+                    <li>01 blanco</li>
+                    <li>01 criterium</li>
+                  </ul>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  role="img"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  role="img"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  role="img"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  role="img"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  role="img"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  role="img"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  role="img"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-right mb-1">
+          <a href="#">Retourner en haut</a>
+        </p>
+      </div>
+    </footer>
+    <div class="container-fluid px-2 mx-0 bg-info collapse text-light" id="liv">
+      <div class="logo">
+        <i class="fa fa-book" aria-hidden="true"></i>
+      </div>
+      <div class="row mx-0">
+        <h3>Livraison et retour</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Exercitationem, eius magni. Facilis repudiandae eum, illum quam
+          molestias reiciendis? Earum, commodi sapiente! Excepturi earum animi
+          mollitia nam, dolore nobis ullam ex, veniam minima asperiores, velit
+          exercitationem voluptatibus repudiandae cupiditate! Distinctio iste
+          tempora nisi sapiente voluptatum, sunt molestiae porro odio quia nam
+          ipsam quidem optio sint impedit quis. Quos commodi distinctio soluta
+          eveniet numquam dolores quasi provident, eos quibusdam nemo suscipit
+          consectetur in earum minus ipsa asperiores illum id repudiandae, iste
+          autem quod, optio ducimus nulla. Soluta, veniam facilis. Aut
+          reiciendis, tempora consectetur odio non autem quos molestias, dolores
+          exercitationem similique asperiores.
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid px-2 mx-0 bg-info collapse text-light" id="pol">
+      <div class="logo">
+        <i class="fa fa-lock" aria-hidden="true"></i>
+      </div>
+      <div class="row mx-0">
+        <h3>Politique du magasin</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Exercitationem, eius magni. Facilis repudiandae eum, illum quam
+          molestias reiciendis? Earum, commodi sapiente! Excepturi earum animi
+          mollitia nam, dolore nobis ullam ex, veniam minima asperiores, velit
+          exercitationem voluptatibus repudiandae cupiditate! Distinctio iste
+          tempora nisi sapiente voluptatum, sunt molestiae porro odio quia nam
+          ipsam quidem optio sint impedit quis. Quos commodi distinctio soluta
+          eveniet numquam dolores quasi provident, eos quibusdam nemo suscipit
+          consectetur in earum minus ipsa asperiores illum id repudiandae, iste
+          autem quod, optio ducimus nulla. Soluta, veniam facilis. Aut
+          reiciendis, tempora consectetur odio non autem quos molestias, dolores
+          exercitationem similique asperiores.
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid px-2 mx-0 bg-info collapse text-light" id="pay">
+      <div class="logo">
+        <i class="fa fa-money" aria-hidden="true"></i>
+      </div>
+      <div class="row mx-0">
+        <h3>Moyens de paiement</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Exercitationem, eius magni. Facilis repudiandae eum, illum quam
+          molestias reiciendis? Earum, commodi sapiente! Excepturi earum animi
+          mollitia nam, dolore nobis ullam ex, veniam minima asperiores, velit
+          exercitationem voluptatibus repudiandae cupiditate! Distinctio iste
+          tempora nisi sapiente voluptatum, sunt molestiae porro odio quia nam
+          ipsam quidem optio sint impedit quis. Quos commodi distinctio soluta
+          eveniet numquam dolores quasi provident, eos quibusdam nemo suscipit
+          consectetur in earum minus ipsa asperiores illum id repudiandae, iste
+          autem quod, optio ducimus nulla. Soluta, veniam facilis. Aut
+          reiciendis, tempora consectetur odio non autem quos molestias, dolores
+          exercitationem similique asperiores.
+        </p>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer container-fluid row1 mx-0 px-0">
+        <div class="container">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div
+              class="col-lg-4 g-3 col-md-4 col-sm-12 d-flex justify-content-center align-items-center"
+            >
+              <div class="list-unstyled">
+                <li>
+                  <a
+                    class="nav-link text-light"
+                    aria-hidden="true"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#liv"
+                    aria-controls="liv"
+                    ><span><i class="fa fa-book"></i></span> Livraison et
+                    retour</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link text-light"
+                    aria-hidden="true"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#pol"
+                    aria-controls="liv"
+                    ><span><i class="fa fa-lock" aria-hidden="true"></i></span>
+                    Politique du magasin</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link text-light"
+                    aria-hidden="true"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#pay"
+                    aria-controls="liv"
+                    ><span><i class="fa fa-money" aria-hidden="true"></i></span>
+                    Moyens de paiement</a
+                  >
+                </li>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 g-3 col-md-4 col-sm-12 d-flex justify-content-center align-items-center"
+            >
+              <div class="list-unstyled text-light">
+                <li class="nav-link text-light">
+                  <span
+                    ><i class="fa fa-info-circle" aria-hidden="true"></i
+                  ></span>
+                  Contact
+                </li>
+                <li>
+                  <a class="nav-link text-light"
+                    ><span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    Tél : 77 *** ** **</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-light"
+                    ><span
+                      ><i class="fa fa-whatsapp" aria-hidden="true"></i
+                    ></span>
+                    Whatsappp</a
+                  >
+                </li>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 g-3 col-md-4 col-sm-12 d-flex justify-content-center align-items-center"
+            >
+              <div class="list-unstyled">
+                <li>
+                  <a href="#" class="nav-link text-light"
+                    ><span
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></span>
+                    Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-light"
+                    ><span
+                      ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></span>
+                    Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-light"
+                    ><span
+                      ><i class="fa fa-pinterest" aria-hidden="true"></i
+                    ></span>
+                    Pinterest</a
+                  >
+                </li>
+              </div>
+            </div>
+          </div>
+          <div class="row my-2">
+            <p
+              class="text-muted d-flex justify-content-center align-items-center"
+            >
+              Veuiller nous contacter
+            </p>
+          </div>
+          <div
+            class="row d-flex justify-content-center align-items-center py-2"
+            id="contact"
+          >
+            <form class="row g-1 text-light">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input
+                  type="email"
+                  placeholder="exemple@gmail.com"
+                  class="form-control"
+                  id="inputEmail4"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Nom</label>
+                <input
+                  type="text"
+                  placeholder="Votre nom"
+                  class="form-control"
+                  id="inputPassword4"
+                />
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  placeholder="1234 Nimza"
+                />
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress2"
+                  placeholder="Apartment, studio, or floor"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Pays</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  value="Sénégal"
+                  id="inputCity"
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Ville</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choisissez...</option>
+                  <option value="dakar">Dakar</option>
+                  <option value="thies">Thiès</option>
+                  <option value="saint-louis">Saint-Louis</option>
+                  <option value="djembe">Djembe</option>
+                  <option value="kaolack">Kaolack</option>
+                  <option value="ziguinchor">Ziguinchor</option>
+                  <option value="tambacounda">Tambacounda</option>
+                  <option value="diourbel">Diourbel</option>
+                  <option value="louga">Louga</option>
+                  <option value="matam">Matam</option>
+                  <option value="sedhiou">Sédhiou</option>
+                  <option value="kolda">Kolda</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck"
+                  />
+                  <label class="form-check-label" for="gridCheck">
+                    <span
+                      ><i class="fa fa-info-circle" aria-hidden="true"></i
+                    ></span>
+                    Si tout est remplis vous pouviez cocher ceci et envoyer
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div
+          class="container-fluid text-light d-flex flex-column justify-content-center align-items-center py-0 m-0"
+        >
+          <h6 class="text-center">&copy;Copyright 2024</h6>
+          <h4 style="letter-spacing: 20px">FAN SHOP</h4>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
