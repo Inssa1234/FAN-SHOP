@@ -36,4 +36,11 @@ window.addEventListener("scroll", () => {
   } else {
     dialog2.classList.remove("show2");
   }
+  let dialog3 = document.getElementById("scrollDialog3");
+
+  if (window.scrollY > 600) {
+    dialog3.classList.add("show3");
+  } else {
+    dialog3.classList.remove("show3");
+  }
 });
