@@ -3,6 +3,12 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
@@ -169,10 +175,8 @@
             <strong
               ><span
                 id="logo"
-                style="
-                  border-bottom: 1px solid black;
-                  border-top: 1px solid black;
-                "
+                style="border-bottom: solid #17a2b8"
+                class="text-info"
                 >FAN</span
               >
               SHOP</strong
@@ -197,10 +201,10 @@
       <section class="py-5 text-center container">
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="font-weight-light">
+            <h2 class="font-weight-light">
               BIENVENUE CHEZ<br />
               FAN-SHOP
-            </h1>
+            </h2>
             <p class="lead text-muted">
               Des packs de tous niveau à vous présenter
             </p>
@@ -243,6 +247,25 @@
           >Ne tardez pas , les quantités sont limités !</span
         >
       </div>
+      <div
+        class="alert alert-info alert-dismissible dialog-box3 py-lg-5"
+        role="alert"
+        id="scrollDialog3"
+      >
+        <strong
+          ><span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+          Information !</strong
+        >
+        <strong class="text-info">NB : </strong> Nous vous offrirons aussi la
+        possibilité de personnaliser votre pack directement dans notre
+        plateforme sur les mises à jour à venir <br /><span class="text-success"
+          >Nous s'y travaillons !</span
+        >
+        <br />
+        Cependant il vous suffit de nous donner la liste de vos matières dans la
+        partie contacte.<br />
+        Nous vendons également chaque fourniture (cahier, stylo ...) au détail.
+      </div>
       <div class="album py-5 bg-light" id="shop">
         <div class="container mt-5 text-center">
           <h1>Boutique</h1>
@@ -270,7 +293,9 @@
                 </svg>
 
                 <div class="card-body">
-                  <h6>Pack collège 3<sup>e</sup> et 4<sup>e</sup></h6>
+                  <h6 class="text-info">
+                    Pack collège 3<sup>e</sup> et 4<sup>e</sup>
+                  </h6>
                   <ul class="list-unstyled">
                     <li>
                       05 cahiers 200pages (Maths, PC, HG, Français et Anglais)
@@ -325,7 +350,9 @@
                 </svg>
 
                 <div class="card-body">
-                  <h6>Pack collège 6<sup>e</sup> et 5<sup>e</sup></h6>
+                  <h6 class="text-info">
+                    Pack collège 6<sup>e</sup> et 5<sup>e</sup>
+                  </h6>
                   <ul class="list-unstyled">
                     <li>
                       04 cahiers 200pages (Maths, HG, Français et Anglais)
@@ -374,16 +401,25 @@
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c" />
                   <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
+                    Photo de pack
                   </text>
                 </svg>
 
                 <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
+                  <h6 class="text-info">Pack lycéen 2<sup>nd</sup></h6>
+                  <ul class="list-unstyled">
+                    <li>02 cahiers 200pages grand format (MATHS et PC)</li>
+                    <li>01 cahier 200pages SVT</li>
+                    <li>
+                      03 cahiers 200pages petit format (Français, HG et Anglais)
+                    </li>
+                    <li>01 cahier d'exercices feuilles blanches</li>
+                    <li>03 cahiers 100pages petit format</li>
+                    <li>04 stylos (bleu, rouge, vert et noir</li>
+                    <li>01 Matériels de géométrie</li>
+                    <li>01 blanco</li>
+                    <li>01 criterium</li>
+                  </ul>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -427,11 +463,21 @@
                 </svg>
 
                 <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
+                  <h6 class="text-info">Pack lycéen 1<sup>er</sup> et Tle</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      03 cahiers 200pages grand format (HG, Français et Philo)
+                    </li>
+                    <li>
+                      03 cahiers 200pages petit format (Maths, PC et Anglais)
+                    </li>
+                    <li>01 cahier d'exercices feuilles blanches</li>
+                    <li>03 cahiers 100pages petit format</li>
+                    <li>04 stylos (bleu, rouge, vert et noir</li>
+                    <li>01 Matériels de géométrie</li>
+                    <li>01 blanco</li>
+                    <li>01 criterium</li>
+                  </ul>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -829,7 +875,7 @@
                 <li>
                   <a class="nav-link text-light"
                     ><span><i class="fa fa-phone" aria-hidden="true"></i></span>
-                    Tél : 77 *** ** **</a
+                    Tél : 78 692 92 52</a
                   >
                 </li>
                 <li>
@@ -875,7 +921,7 @@
           </div>
           <div class="row my-2">
             <p
-              class="text-muted d-flex justify-content-center align-items-center"
+              class="text-info d-flex justify-content-center align-items-center"
             >
               Veuiller nous contacter
             </p>
@@ -886,21 +932,25 @@
           >
             <form class="row g-1 text-light">
               <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Nom</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">@</span>
+                  <input
+                    type="text"
+                    placeholder="Votre nom"
+                    class="form-control"
+                    id="inputPassword4"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Email</label>
+
                 <input
                   type="email"
                   placeholder="exemple@gmail.com"
                   class="form-control"
                   id="inputEmail4"
-                />
-              </div>
-              <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Nom</label>
-                <input
-                  type="text"
-                  placeholder="Votre nom"
-                  class="form-control"
-                  id="inputPassword4"
                 />
               </div>
               <div class="col-12">
@@ -969,12 +1019,16 @@
             </form>
           </div>
         </div>
-        <div
-          class="container-fluid text-light d-flex flex-column justify-content-center align-items-center py-0 m-0"
-        >
-          <h6 class="text-center">&copy;Copyright 2024</h6>
-          <h4 style="letter-spacing: 20px">FAN SHOP</h4>
-        </div>
+      </div>
+    </div>
+    <div class="footer-finale py-5">
+      <div class="container-fluid px-0 mx-0">
+        <h4 class="text-center">
+          <strong style="border-bottom: solid #17a2b8" class="text-info"
+            >FAN</strong
+          >
+          <strong>SHOP</strong>
+        </h4>
       </div>
     </div>
     <script src="./script.js"></script>
