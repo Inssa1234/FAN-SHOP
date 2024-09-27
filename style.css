@@ -2,6 +2,10 @@
   background: url(./banner.jpg) center/cover no-repeat;
   min-height: 50vh !important;
 }
+* h2 {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+}
 .banner1 {
   min-height: 500px !important;
   background: rgba(6, 16, 110, 0.466);
@@ -16,12 +20,11 @@
   background: black;
 }
 .row1 {
-  background: rgba(17, 35, 63, 0.932) !important;
+  background: rgba(11, 14, 20, 0.932) !important;
 }
 * h1 {
   font-family: "Bodoni Moda SC", serif;
   font-optical-sizing: auto;
-  font-weight: 700;
   font-style: normal;
 }
 * a,
@@ -71,6 +74,22 @@
 }
 
 .dialog-box2.show2 {
+  transform: translateX(0); /* Glisse à sa position normale */
+  opacity: 1; /* Devient visible */
+}
+
+.dialog-box3 {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  z-index: 1000;
+  transform: translateX(-100%); /* Initialement hors de l'écran à gauche */
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0; /* Invisible au départ */
+  display: block; /* Toujours présent mais caché par le transform */
+}
+
+.dialog-box3.show3 {
   transform: translateX(0); /* Glisse à sa position normale */
   opacity: 1; /* Devient visible */
 }
