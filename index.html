@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
+    <link rel="shortcut icon" href="./logo.svg" type="image/x-icon" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta name="description" content="fan-shop-two.vercel.app" />
-    <link rel="shortcut icon" href="./logo.svg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -88,7 +88,7 @@
       </div>
     </div>
     <header style="position: sticky; top: 0; z-index: 2000">
-      <div class="collapse bg-dark" id="navbarHeader">
+      <div class="collapse bg-info" id="navbarHeader">
         <div class="container">
           <div class="row">
             <div class="col-sm-8 col-md-7 py-4">
@@ -98,73 +98,33 @@
             <div
               class="col-sm-4 offset-md-1 py-4 nav d-flex flex-column justify-content-center"
             >
-              <h4 class="text-white">Menu</h4>
+              <h4 class="text-white nav-link">Menu</h4>
               <ul class="list-unstyled">
                 <li class="link">
-                  <a href="#" class="text-white">
-                    <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24px"
-                        viewBox="0 -960 960 960"
-                        width="24px"
-                        fill="#e8eaed"
-                      >
-                        <path
-                          d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
-                        /></svg
-                    ></span>
+                  <a href="#" class="text-white nav-link">
+                    <span><i class="fa fa-home" aria-hidden="true"></i></span>
                     Accueil</a
                   >
                 </li>
                 <li>
-                  <a href="#shop" class="text-white"
+                  <a href="#shop" class="text-white nav-link"
                     ><span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24px"
-                        viewBox="0 -960 960 960"
-                        width="24px"
-                        fill="#e8eaed"
-                      >
-                        <path
-                          d="M160-720v-80h640v80H160Zm0 560v-240h-40v-80l40-200h640l40 200v80h-40v240h-80v-240H560v240H160Zm80-80h240v-160H240v160Zm-38-240h556-556Zm0 0h556l-24-120H226l-24 120Z"
-                        /></svg
+                      ><i class="fa fa-shopping-bag" aria-hidden="true"></i
                     ></span>
                     Boutique</a
                   >
                 </li>
                 <li>
-                  <a href="#location" class="text-white"
+                  <a href="#location" class="text-white nav-link"
                     ><span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24px"
-                        viewBox="0 -960 960 960"
-                        width="24px"
-                        fill="#e8eaed"
-                      >
-                        <path
-                          d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
-                        /></svg
+                      ><i class="fa fa-location-arrow" aria-hidden="true"></i
                     ></span>
                     Localisation</a
                   >
                 </li>
                 <li>
-                  <a href="#contact" class="text-white"
-                    ><span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24px"
-                        viewBox="0 -960 960 960"
-                        width="24px"
-                        fill="#e8eaed"
-                      >
-                        <path
-                          d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
-                        /></svg
-                    ></span>
+                  <a href="#contact" class="text-white nav-link"
+                    ><span><i class="fa fa-phone" aria-hidden="true"></i></span>
                     Contacter-nous</a
                   >
                 </li>
@@ -213,26 +173,10 @@
               Des packs de tous niveau à vous présenter
             </p>
             <p>
-              <a
-                href="#"
-                type="button"
-                data-toggle="collapse"
-                data-target="#shop"
-                aria-controls="navbarHeader"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-                class="btn btn-primary my-2"
+              <a href="#shop" class="btn btn-primary my-2"
                 >voir Boutique (Voir Les Packs)</a
               >
-              <a
-                href="#"
-                type="button"
-                data-toggle="collapse"
-                data-target="#contacte"
-                aria-controls="navbarHeader"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-                class="btn btn-secondary my-2"
+              <a href="#contact" class="btn btn-secondary my-2"
                 >Voir le champ de Contacte</a
               >
             </p>
@@ -288,7 +232,7 @@
         partie contacte.<br />
         Nous vendons également chaque fourniture (cahier, stylo ...) au détail.
       </div>
-      <div class="album collapse py-5 bg-light" id="shop">
+      <div class="album py-5 bg-light" id="shop">
         <div class="container mt-5 text-center">
           <h1>Boutique</h1>
           <div class="animated-text" id="text"></div>
@@ -837,7 +781,7 @@
       </div>
     </div>
     <div class="footer-main">
-      <div class="footer container-fluid row1 mx-0 px-0">
+      <div class="footer container-fluid row1 mx-0 px-0 my-0">
         <div class="container">
           <div class="row d-flex justify-content-center align-items-center">
             <div
@@ -941,105 +885,109 @@
               </div>
             </div>
           </div>
-          <div class="row my-2">
+          <div class="row my-0">
             <p
               class="text-info d-flex justify-content-center align-items-center"
             >
               Veuiller nous contacter
             </p>
           </div>
-          <div
-            class="row d-flex justify-content-center align-items-center py-2"
-            id="contact"
-          >
-            <form class="row collapse g-1 text-light" id="contacte">
-              <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Nom</label>
-                <div class="input-group mb-3">
-                  <span class="input-group-text">@</span>
-                  <input
-                    type="text"
-                    placeholder="Votre nom"
-                    class="form-control"
-                    id="inputPassword4"
-                  />
-                </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid px-0 mx-0 bg-light">
+      <div class="container">
+        <div
+          class="row d-flex justify-content-center align-items-center py-2"
+          id="contact"
+        >
+          <form class="row g-1 text-dark" id="contacte">
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Nom</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text">@</span>
+                <input
+                  type="text"
+                  placeholder="Votre nom"
+                  class="form-control"
+                  id="inputPassword4"
+                />
               </div>
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
 
+              <input
+                type="email"
+                placeholder="exemple@gmail.com"
+                class="form-control"
+                id="inputEmail4"
+              />
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="1234 Nimza"
+              />
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress2"
+                placeholder="Apartment, studio, or floor"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Pays</label>
+              <input
+                type="text"
+                class="form-control"
+                value="Sénégal"
+                id="inputCity"
+              />
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Ville</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choisissez...</option>
+                <option value="dakar">Dakar</option>
+                <option value="thies">Thiès</option>
+                <option value="saint-louis">Saint-Louis</option>
+                <option value="djembe">Djembe</option>
+                <option value="kaolack">Kaolack</option>
+                <option value="ziguinchor">Ziguinchor</option>
+                <option value="tambacounda">Tambacounda</option>
+                <option value="diourbel">Diourbel</option>
+                <option value="louga">Louga</option>
+                <option value="matam">Matam</option>
+                <option value="sedhiou">Sédhiou</option>
+                <option value="kolda">Kolda</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
                 <input
-                  type="email"
-                  placeholder="exemple@gmail.com"
-                  class="form-control"
-                  id="inputEmail4"
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
                 />
+                <label class="form-check-label" for="gridCheck">
+                  <span
+                    ><i class="fa fa-info-circle" aria-hidden="true"></i
+                  ></span>
+                  Si tout est remplis vous pouviez cocher ceci et envoyer
+                </label>
               </div>
-              <div class="col-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputAddress"
-                  placeholder="1234 Nimza"
-                />
-              </div>
-              <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputAddress2"
-                  placeholder="Apartment, studio, or floor"
-                />
-              </div>
-              <div class="col-md-6">
-                <label for="inputCity" class="form-label">Pays</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  value="Sénégal"
-                  id="inputCity"
-                />
-              </div>
-              <div class="col-md-4">
-                <label for="inputState" class="form-label">Ville</label>
-                <select id="inputState" class="form-select">
-                  <option selected>Choisissez...</option>
-                  <option value="dakar">Dakar</option>
-                  <option value="thies">Thiès</option>
-                  <option value="saint-louis">Saint-Louis</option>
-                  <option value="djembe">Djembe</option>
-                  <option value="kaolack">Kaolack</option>
-                  <option value="ziguinchor">Ziguinchor</option>
-                  <option value="tambacounda">Tambacounda</option>
-                  <option value="diourbel">Diourbel</option>
-                  <option value="louga">Louga</option>
-                  <option value="matam">Matam</option>
-                  <option value="sedhiou">Sédhiou</option>
-                  <option value="kolda">Kolda</option>
-                </select>
-              </div>
-              <div class="col-12">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="gridCheck"
-                  />
-                  <label class="form-check-label" for="gridCheck">
-                    <span
-                      ><i class="fa fa-info-circle" aria-hidden="true"></i
-                    ></span>
-                    Si tout est remplis vous pouviez cocher ceci et envoyer
-                  </label>
-                </div>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-primary">Envoyer</button>
-              </div>
-            </form>
-          </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
