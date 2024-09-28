@@ -44,3 +44,22 @@ window.addEventListener("scroll", () => {
     dialog3.classList.remove("show3");
   }
 });
+
+function handleScroll() {
+  const sections = document.querySelectorAll(".scroll-section");
+
+  sections.forEach((section) => {
+    const sectionPosition = section.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.3; // Ajuster ce ratio pour personnaliser quand l'animation commence
+
+    if (sectionPosition < screenPosition) {
+      section.classList.add("show");
+    }
+  });
+}
+
+// Détecter l'événement scroll et appliquer l'animation
+window.addEventListener("scroll", handleScroll);
+
+// Initialiser l'animation au chargement de la page
+handleScroll();
