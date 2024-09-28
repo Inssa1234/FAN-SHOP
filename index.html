@@ -612,10 +612,12 @@
           id="contact"
         >
           <form class="row g-1 text-dark" id="contacte">
-            <div class="col-md-6">
+              <div class="col-md-6">
               <label for="inputPassword4" class="form-label">Nom</label>
               <div class="input-group mb-3">
-                <span class="input-group-text">@</span>
+                <span class="input-group-text"
+                  ><i class="fa fa-user" aria-hidden="true"></i
+                ></span>
                 <input
                   type="text"
                   placeholder="Votre nom"
@@ -624,15 +626,20 @@
                 />
               </div>
             </div>
+
             <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Email</label>
-
-              <input
-                type="email"
-                placeholder="exemple@gmail.com"
-                class="form-control"
-                id="inputEmail4"
-              />
+              <div class="input-group mb-3">
+                <span class="input-group-text"
+                  ><i class="fa fa-envelope" aria-hidden="true"></i
+                ></span>
+                <input
+                  type="email"
+                  placeholder="exemple@gmail.com"
+                  class="form-control"
+                  id="inputEmail4"
+                />
+              </div>
             </div>
             <div class="col-12">
               <label for="inputAddress" class="form-label">Address</label>
