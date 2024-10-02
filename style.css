@@ -1,5 +1,5 @@
 .banner {
-  background: url(./banner.jpg) center/cover no-repeat;
+  background: url(./back2.jpg) center/cover no-repeat;
   min-height: 50vh !important;
 }
 * h2 {
@@ -111,4 +111,7 @@
     padding: 5px 10px;
     margin: 5px 5px 0 0;
     border-radius: 5px;
+}
+.bg-img{
+   background: url(./back2.jpg) center/cover no-repeat;
 }
