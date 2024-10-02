@@ -1,5 +1,5 @@
 .banner {
-  background: url(./back2.webp) center/cover no-repeat;
+  background: url(./back1.webp) center/cover no-repeat;
   min-height: 50vh !important;
 }
 * h2 {
@@ -113,5 +113,5 @@
     border-radius: 5px;
 }
 .bg-img{
-   background: url(./back2.webp) center/cover no-repeat;
+   background: url(./back1.webp) center/cover no-repeat;
 }
